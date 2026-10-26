@@ -132,27 +132,27 @@ graph TD
 
 ### 2. Detailed Mathematical Formulations of the 5 Pillars
 
-#### Pillar 1: Foundational Literacy & Retention Deficit ($P_{\text{Academic}}$, Weight $30\%$)
+#### Pillar 1: Foundational Literacy & Retention Deficit ($P_{\text{Academic}}$, Weight 30%)
 $$P_{\text{Academic}} = 0.50 \cdot (100 - \text{Literacy}) + 0.50 \cdot \min\Big(100, \text{Dropout}_{\text{sec}} \times 2.2\Big)$$
 * Captures the foundational reading gap from the official Census baseline along with secondary attrition from UDISE+.
 * Scaled so that high-attrition districts (such as Sheopur with 45.0% dropout and Alirajpur with 36.1% literacy) reflect severe foundational academic stress.
 
-#### Pillar 2: Pedagogical Capacity & Classroom Congestion ($P_{\text{Pedagogy}}$, Weight $25\%$)
-$$P_{\text{Pedagogy}} = 0.50 \cdot \min\Big(100, \max(0, \text{PTR}_{\text{sec}} - 18) \times 3.0\Big) + 0.50 \cdot (100 - \text{Trained\_Teachers})$$
+#### Pillar 2: Pedagogical Capacity & Classroom Congestion ($P_{\text{Pedagogy}}$, Weight 25%)
+$$P_{\text{Pedagogy}} = 0.50 \cdot \min\Big(100, \max(0, \text{PTR}_{\text{sec}} - 18) \times 3.0\Big) + 0.50 \cdot (100 - \text{Trained Teachers})$$
 * Aligns with the Right to Education (RTE Act 2009) statutory staffing ratio guidelines. 
 * Imposes progressive penalties when secondary classrooms exceed optimal student-teacher loads and factors in the proportion of certified in-service educators.
 
-#### Pillar 3: Physical Utilities & School WASH ($P_{\text{WASH}}$, Weight $20\%$)
-$$P_{\text{WASH}} = \min\Big(100, 0.40 \cdot (100 - \text{Electricity}) \times 1.5 + 0.40 \cdot (100 - \text{Toilets}) \times 2.5 + 0.20 \cdot (100 - \text{Drinking\_Water}) \times 5.0\Big)$$
+#### Pillar 3: Physical Utilities & School WASH ($P_{\text{WASH}}$, Weight 20%)
+$$P_{\text{WASH}} = \min\Big(100, 0.40 \cdot (100 - \text{Electricity}) \times 1.5 + 0.40 \cdot (100 - \text{Toilets}) \times 2.5 + 0.20 \cdot (100 - \text{Drinking Water}) \times 5.0\Big)$$
 * Weighs functional sanitation as the principal physical prerequisite for girl-child attendance.
 * Highly sensitive to power grid deficits (e.g., Barwani with 56.86% electrification) and tap drinking water access.
 
-#### Pillar 4: Digital Equity & Future Readiness ($P_{\text{Digital}}$, Weight $10\%$)
-$$P_{\text{Digital}} = 0.60 \cdot (100 - \text{Computer\_Lab}) + 0.40 \cdot (100 - \text{Internet})$$
+#### Pillar 4: Digital Equity & Future Readiness ($P_{\text{Digital}}$, Weight 10%)
+$$P_{\text{Digital}} = 0.60 \cdot (100 - \text{Computer Lab}) + 0.40 \cdot (100 - \text{Internet})$$
 * Reflects ICT lab availability and broadband penetration required for computer-aided education and digital literacy under NEP 2020.
 
-#### Pillar 5: Socio-Economic Vulnerability Context ($P_{\text{SocioEconomic}}$, Weight $15\%$)
-$$P_{\text{SocioEconomic}} = \min\Big(100, \text{MPI\_Poverty\_Index} \times 2.0\Big)$$
+#### Pillar 5: Socio-Economic Vulnerability Context ($P_{\text{SocioEconomic}}$, Weight 15%)
+$$P_{\text{SocioEconomic}} = \min\Big(100, \text{MPI Poverty Index} \times 2.0\Big)$$
 * Integrates the official NITI Aayog Multidimensional Poverty Index (MPI) headcount ratio, quantifying deprivations in nutrition, health, and living standards.
 
 ---
@@ -313,7 +313,7 @@ The web platform is organized into three interconnected tiers:
 ### 3. District Analytics Dossier Drawer
 * **Smooth Count-Up Animations**: Features an 800ms ease-out cubic animation for quantitative metrics on district selection.
 * **RTE Compliance Indicator**: Compares Pupil-Teacher Ratio against the 30:1 statutory ceiling.
-* **Utility Saturation Bars**: Visualizes saturation levels with critical color markers ($<55\%$ red, $55-80\%$ amber, $\ge 80\%$ emerald).
+* **Utility Saturation Bars**: Visualizes saturation levels with critical color markers (<55% red, 55–80% amber, ≥80% emerald).
 
 ---
 
